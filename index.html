@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>Good Morning Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Code:wght@300..700&family=Lilita+One&family=Oi&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="page">
@@ -13,39 +19,66 @@
       </header>
       <section class="content">
         <!--Sips-->
-        <article class="column-left">
+        <article class="column left">
           <h2 class="section-title blue">Sips</h2>
-          <ul>
-            <li>Espresso</li>
-            <li>Latte</li>
-            <li>Cappuccino</li>
-            <li>Tea</li>
-            <li>Hot Chocolate</li>
+          <hr class="line-blue" />
+
+          <ul class="menu-list">
+            <li>
+              <span class="item-name">Espresso</span>
+              <span class="item-price">15 SEK</span>
+            </li>
+            <li>
+              <span class="item-name">Flat White</span>
+              <span class="item-price">15 SEK</span>
+            </li>
+            <li>
+              <span class="item-name">Americano</span>
+              <span class="item-price">15 SEK</span>
+            </li>
+          </ul>
+          <h3 class="sub-title">Coffee</h3>
+          <hr class="line-blue thin" />
+
+          <ul class="menu-list">
+            <li><span>Espresso</span><span>15 SEK</span></li>
+            <li><span>Latte</span><span>15 SEK</span></li>
           </ul>
         </article>
         <!--Grub-->
-        <article class="column-center">
+        <article class="column center">
           <h2 class="section-title brown">Grub</h2>
-          <ul>
-            <li>Bagel</li>
-            <li>Croissant</li>
-            <li>Muffin</li>
-            <li>Toast</li>
-            <li>Pancakes</li>
+          <hr class="line-brown" />
+
+          <h3 class="sub-title">Savory Brekkie</h3>
+
+          <ul class="menu-list">
+            <li><span>Shakshuka</span><span>15 SEK</span></li>
+            <li><span>Eggs Benedict</span><span>15 SEK</span></li>
           </ul>
         </article>
         <!--News and contact-->
-        <article class="column-right">
+        <article class="column right">
           <h2 class="section-title pink">News</h2>
-          <ul>
-            <li>Local Events</li>
-            <li>Weather Update</li>
-            <li>Sports Highlights</li>
-            <li>Market Trends</li>
-            <li>Community Stories</li>
-          </ul>
+          <hr class="line-pink" />
+
+          <div class="news-item">
+            <strong>2025-DEC-24 XMAS DEALS</strong>
+            <p>We're open on Christmas Eve for a fresh breakfast.</p>
+          </div>
+          <h2 class="section-title yellow">Contact</h2>
+
+          <form class="contact-form">
+            <input type="text" placeholder="First name" />
+            <input type="email" placeholder="E-mail" />
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">SEND</button>
+          </form>
         </article>
       </section>
+      <footer class="footer">
+        <p>Open Daily 8.00 → 15.00</p>
+      </footer>
     </main>
   </body>
 </html>
