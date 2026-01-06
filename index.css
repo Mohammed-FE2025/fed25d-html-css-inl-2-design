@@ -4,6 +4,23 @@ padding: 0;
 box-sizing: border-box;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #2f6fd6;
+}
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+}
+
 
 body {
 font-family: Arial, Helvetica, sans-serif;
@@ -201,6 +218,10 @@ margin: 10px 0 20px;
 border-top: 2px solid #f4a3b5;
 margin: 10px 0 20px;
 }
+.line-yellow {
+border-top: 2px solid #FFB205;
+margin: 10px 0 20px;
+}
 .news-item {
 font-size: 13px;
 margin-bottom: 20px;
@@ -211,7 +232,11 @@ margin-bottom: 20px;
 margin-top: 5px;
 font-family: 'Fira Code', monospace;
 }
-
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .contact-form input,
 .contact-form textarea {
 width: 100%;
@@ -232,5 +257,7 @@ cursor: pointer;
 border-top: 2px solid #2f6fd6;
 margin-top: 40px;
 padding-top: 10px;
-text-align: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
