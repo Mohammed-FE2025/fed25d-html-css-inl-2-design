@@ -17,7 +17,8 @@
       <header class="top-bar">
         <h1>Good Morning Club</h1>
 
-        <button class="hamburger" aria-label="Menu">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger" aria-label="Menu">
           <svg
             width="32"
             height="24"
@@ -50,13 +51,21 @@
               stroke-width="3"
             />
           </svg>
-        </button>
+        </label>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#sips">Sips</a></li>
+            <li><a href="#grub">Grub</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </header>
 
       <section class="content">
         <!--Sips-->
         <article class="column left">
-          <h2 class="section-title blue">Sips</h2>
+          <h2 id="sips" class="section-title blue">Sips</h2>
           <hr class="line-blue" />
 
           <div class="sips-columns">
@@ -120,7 +129,7 @@
 
         <!--Grub-->
         <article class="column center">
-          <h2 class="section-title brown">Grub</h2>
+          <h2 id="grub" class="section-title brown">Grub</h2>
           <hr class="line-brown" />
 
           <div class="grub-columns">
@@ -248,7 +257,7 @@
         </article>
         <!--News and contact-->
         <article class="column right">
-          <h2 class="section-title pink">News</h2>
+          <h2 id="news" class="section-title pink">News</h2>
           <hr class="line-pink" />
 
           <div class="news-item">
@@ -268,7 +277,7 @@
             <p>Earn points with every purchase for free items.</p>
           </div>
           <div class="contact-header">
-            <h2 class="section-title yellow">Contact</h2>
+            <h2 id="contact" class="section-title yellow">Contact</h2>
             <svg
               width="52"
               height="70"
@@ -287,12 +296,34 @@
             </svg>
           </div>
           <hr class="line-yellow" />
-
           <form class="contact-form">
-            <input type="text" placeholder="First name" />
-            <input type="email" placeholder="E-mail" />
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">SEND</button>
+            <div class="form-grid">
+              <!-- LEFT: inputs -->
+              <div class="form-fields">
+                <input type="text" placeholder="First name" />
+                <input type="email" placeholder="E-mail" />
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">SEND</button>
+              </div>
+
+              <!-- RIGHT: checkboxes -->
+              <div class="checkbox-group">
+                <label>
+                  <input type="checkbox" />
+                  Sips
+                </label>
+
+                <label>
+                  <input type="checkbox" />
+                  Grub
+                </label>
+
+                <label>
+                  <input type="checkbox" />
+                  Other
+                </label>
+              </div>
+            </div>
           </form>
         </article>
       </section>
