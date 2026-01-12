@@ -31,8 +31,8 @@ background: #f2f2f2;
 
 
 .page {
-width: 1200px;
-
+width: 100%;
+max-width: 1200px;
 margin: 40px auto;
 background: #fff;
 padding: 40px;
@@ -383,4 +383,32 @@ padding-top: 10px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .page {
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  .content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .sips-columns,
+  .grub-columns {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .sips-divider,
+  .grub-divider {
+    display: none;
+  }
+  
+  .sips-columns::after {
+    display: none;
+  }
 }
